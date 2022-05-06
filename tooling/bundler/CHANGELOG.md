@@ -1,5 +1,12 @@
 # Changelog
 
+## \[1.0.0-rc.6]
+
+- Ignore errors when loading `icns` files in the `.deb` package generation.
+  - [de444b15](https://www.github.com/tauri-apps/tauri/commit/de444b15d222a65861b099a7536318bad000110e) fix(bundler): debian failing to load icns icon, closes [#3062](https://www.github.com/tauri-apps/tauri/pull/3062) ([#4009](https://www.github.com/tauri-apps/tauri/pull/4009)) on 2022-04-30
+- Fix app downgrades when using the Windows installer.
+  - [72e577dc](https://www.github.com/tauri-apps/tauri/commit/72e577dcc6a6733182059ab51b28a03c6077edc1) fix(bundler): properly reinstall files on MSI downgrades, closes [#3868](https://www.github.com/tauri-apps/tauri/pull/3868) ([#4044](https://www.github.com/tauri-apps/tauri/pull/4044)) on 2022-05-04
+
 ## \[1.0.0-rc.5]
 
 - Set the Debian control file `Priority` field to `optional`.
